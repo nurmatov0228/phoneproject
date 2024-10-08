@@ -1,0 +1,30 @@
+.section__phone {
+  width: 262.5px;
+  height: 499.43px;
+  @extend %pa;
+  top: 147px;
+  left: 894px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__phone {
+    width: 159px;
+    height: 300px;
+    left: 305px;
+    top: 136px;
+    z-index: 9999999;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section__phone {
+    width: 127.2px;
+    height: 239.73px;
+    left: 124px;
+    top: 110px;
+    border-radius: 18px;
+  }
+}

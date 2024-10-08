@@ -1,0 +1,139 @@
+.offer {
+  @extend %pa;
+  top: 240px;
+  left: 165px;
+  width: 546px;
+  height: 345px;
+  @extend %dfdc;
+
+  h1 {
+    width: 529px;
+    height: 220px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536b;
+  }
+
+  p {
+    @extend %pa;
+    bottom: 0;
+    left: 27px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6c8294;
+  }
+
+  &__email {
+    input {
+      @extend %pa;
+      top: 264px;
+      left: 0px;
+      border: none;
+
+      &::placeholder {
+        @extend %pa;
+        top: 16px;
+        left: 27px;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #36536b;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+
+    button {
+      @extend %pa;
+      top: 264px;
+      left: 275px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .offer {
+    width: 573px;
+    height: 225px;
+    left: 97px;
+    top: 484px;
+
+    h1 {
+      width: 573px;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.369231px;
+    }
+
+    p {
+      top: 208px;
+      width: 225px;
+      left: 109px;
+    }
+
+    &__email {
+      input {
+        top: 122px + 22px;
+        left: 65px;
+        width: 445px;
+      }
+
+      button {
+        top: 122px + 22px;
+        left: 337px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .offer {
+    width: 327px;
+    height: 285px;
+    left: 24px;
+    top: 374px;
+
+    h1 {
+      width: 327px;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.246154px;
+    }
+
+    p {
+      width: 225px;
+      height: 18px;
+      left: 50px;
+      top: 268px;
+    }
+
+    &__email {
+      input {
+        top: 132px;
+        left: 0;
+        width: 327px;
+        height: 48px;
+
+        &::placeholder {
+          width: 142px;
+          height: 18px;
+        }
+      }
+
+      button {
+        width: 327px;
+        height: 48px;
+        top: 196px;
+        left: 0;
+      }
+    }
+  }
+}

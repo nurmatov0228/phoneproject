@@ -1,0 +1,152 @@
+.footer {
+  @extend %pa;
+  width: 1440px;
+  height: 100px;
+  left: 0px;
+  top: 2966px;
+  background-color: #1b262f;
+
+  &__navbar {
+    @extend %pa;
+    width: 432px;
+    height: 38px;
+    top: 31px;
+    left: 164px;
+    @extend %dfai;
+
+    img {
+      width: 126.66px;
+      height: 38px;
+      margin-right: 32.34px;
+    }
+
+    a {
+      margin-left: 40px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: #fbfcfe;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+      z-index: 99999;
+    }
+
+    a:hover {
+      cursor: pointer;
+      transition: all 0.5s ease;
+      color: #fbfcfe;
+      opacity: 1;
+    }
+  }
+
+  &__icons {
+    @extend %pa;
+    top: 38px;
+    left: 1135px;
+    width: 120px;
+    height: 24px;
+    @extend %dfai;
+    justify-content: space-between;
+    z-index: 9999;
+
+    svg {
+      width: 24px;
+      max-height: 24px;
+      z-index: 9999;
+      path {
+        z-index: 999999;
+      }
+    }
+
+    svg:hover {
+      cursor: pointer;
+      path:hover {
+        fill: #da6d97;
+      }
+    }
+  }
+
+  .footercircle img {
+    @extend %pa;
+    top: 0;
+    left: 1050px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+    height: 100px;
+    left: 0px;
+    top: 3317px;
+
+    &__navbar {
+      width: 432px;
+      height: 38px;
+      top: 31px;
+      left: 39px;
+
+      img {
+        width: 135px;
+        height: 38px;
+        margin-right: 24px;
+      }
+
+      a {
+        margin-left: 40px;
+      }
+    }
+
+    &__icons {
+      width: 120px;
+      height: 24px;
+      top: 38px;
+      left: 608px;
+    }
+
+    .footercircle img {
+      top: 0;
+      left: 378px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    width: 375px;
+    height: 353px;
+    left: 0px;
+    top: 3834px;
+
+    &__navbar {
+      width: 135px;
+      height: 193px;
+      flex-direction: column;
+      top: 41px;
+      left: 120px;
+
+      img {
+        margin: 0;
+        margin-bottom: 40px - 31px;
+      }
+
+      a {
+        margin-top: 31px;
+      }
+    }
+
+    &__icons {
+      width: 120px;
+      height: 24px;
+      top: 274px;
+      left: 128px;
+    }
+
+    .footercircle img {
+      top: 253px;
+      left: -15px;
+    }
+  }
+}

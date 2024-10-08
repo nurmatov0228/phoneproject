@@ -1,0 +1,44 @@
+.transfermoney {
+  position: absolute;
+  width: 263px;
+  height: 500px;
+  left: 705px;
+  top: 1793px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  img {
+    width: 263px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .transfermoney {
+    width: 168.32px;
+    height: 320px;
+    left: 203px;
+    top: 2058px;
+    border-radius: 20px;
+
+    img {
+      width: 168.32px;
+      height: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .transfermoney {
+    width: 152px;
+    height: 290px;
+    left: 24px;
+    top: 1998px;
+    border-radius: 18px;
+
+    img {
+      width: 152px;
+      height: 290px;
+    }
+  }
+}

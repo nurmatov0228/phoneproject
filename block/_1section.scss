@@ -1,0 +1,22 @@
+section {
+  position: relative;
+  width: 1440px;
+  height: 3066px;
+  background: #edf3f8;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 768px;
+    height: 3417px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  section {
+    width: 375px;
+    height: 4187px;
+  }
+}

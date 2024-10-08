@@ -1,0 +1,44 @@
+.acceptingmoney {
+  position: absolute;
+  width: 263px;
+  height: 500px;
+  left: 1008px;
+  top: 1793px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  img {
+    width: 263px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .acceptingmoney {
+    width: 168.32px;
+    height: 320px;
+    left: 396.92px;
+    top: 2058px;
+    border-radius: 20px;
+
+    img {
+      width: 168.32px;
+      height: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .acceptingmoney {
+    width: 152px;
+    height: 290px;
+    left: 200px;
+    top: 1998px;
+    border-radius: 18px;
+
+    img {
+      width: 152px;
+      height: 290px;
+    }
+  }
+}

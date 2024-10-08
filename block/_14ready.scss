@@ -1,0 +1,113 @@
+.ready {
+  @extend %pa;
+  width: 1110px;
+  height: 56px;
+  left: 165px;
+  top: 2814px;
+  @extend %df;
+
+  h1 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+
+  &__email {
+    input {
+      @extend %pa;
+      top: 4px;
+      left: 665px;
+      border: none;
+
+      &::placeholder {
+        @extend %pa;
+        top: 16px;
+        left: 27px;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #36536b;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+
+    button {
+      @extend %pa;
+      top: 4px;
+      left: 665px + 272px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ready {
+    width: 445px;
+    height: 144px;
+    flex-direction: column;
+    left: 162px;
+    top: 3073px;
+
+    h1 {
+      width: 445px;
+      height: 56px;
+      text-align: center;
+    }
+
+    &__email {
+      input {
+        top: 96px;
+        left: 0;
+      }
+
+      button {
+        top: 96px;
+        left: 272px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .ready {
+    width: 328px;
+    height: 180px;
+    left: 24px;
+    top: 3574px;
+
+    h1 {
+      width: 328px;
+      height: 36px;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.246154px;
+    }
+
+    &__email {
+      input {
+        top: 32px + 36px;
+        left: 0.5px;
+        width: 327px;
+        height: 48px;
+
+        &::placeholder {
+          width: 142px;
+          height: 18px;
+        }
+      }
+
+      button {
+        width: 327px;
+        height: 48px;
+        top: 96px + 36px;
+        left: 0.5px;
+      }
+    }
+  }
+}
